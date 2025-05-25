@@ -16,7 +16,7 @@ This repository implements a **big data pipeline** for processing the [MIMIC-III
 
 ## Data Flow Diagram
 
-![Data Flow](./data_flow_diagram.png)
+![Data Flow](Documentations/data_flow_diagram.png)
 
 ## Repository Structure
 ```plaintext
