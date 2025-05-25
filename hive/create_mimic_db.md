@@ -51,23 +51,23 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
 
 Example snippet from create_mimic_db.sql
  
-CREATE DATABASE IF NOT EXISTS mimic_db
+ CREATE DATABASE IF NOT EXISTS mimic_db
 
-LOCATION 'hdfs://namenode:9000/transformed_mimic';
+ LOCATION 'hdfs://namenode:9000/transformed_mimic';
 
-USE mimic_db;
+ USE mimic_db;
 
-CREATE EXTERNAL TABLE IF NOT EXISTS admissions (
+ CREATE EXTERNAL TABLE IF NOT EXISTS admissions (
 
     row_id INT,
     
     subject_id INT,
     
-    ...
-)
-STORED AS PARQUET
+     ...
+ )
+ STORED AS PARQUET
 
-LOCATION 'hdfs://namenode:9000/transformed_mimic/ADMISSIONS.parquet';
+ LOCATION 'hdfs://namenode:9000/transformed_mimic/ADMISSIONS.parquet';
 
 **Verify table creation:**
 
