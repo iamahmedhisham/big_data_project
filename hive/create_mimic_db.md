@@ -51,7 +51,7 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
 
 Example snippet from create_mimic_db.sql
 
- 
+```text
  CREATE DATABASE IF NOT EXISTS mimic_db
 
  LOCATION 'hdfs://namenode:9000/transformed_mimic';
