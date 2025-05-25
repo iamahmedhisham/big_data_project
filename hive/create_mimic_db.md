@@ -12,8 +12,11 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
    - Spark string → Hive STRING
    - Spark timestamp → Hive TIMESTAMP
    - Spark double → Hive DOUBLE
+   - 
 **Storage**: Tables use Parquet format with Snappy compression (TBLPROPERTIES ('parquet.compression'='SNAPPY')). Adjust to GZIP if needed.
+
 **Nullable Columns**: All columns are nullable, matching the Parquet schemas.
+
 **HDFS Locations**: Each table points to its respective Parquet file, e.g., hdfs://namenode:9000/transformed_mimic/ADMISSIONS.parquet.
 
 ## Creating the Database with DBeaver
