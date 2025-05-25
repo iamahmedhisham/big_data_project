@@ -56,6 +56,7 @@ big_data_project/
 │   └── run_py_into_spark.bat
 │   └── extract_schema.py
 ├── full_tables.png
+├── USER_MANUAL.md
 ├── README.md
 └── LICENSE
 ```
