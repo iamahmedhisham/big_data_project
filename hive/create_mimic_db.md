@@ -23,15 +23,25 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
 
 ## Creating the Database with DBeaver
 1- **Set Up DBeaver Connection:**
+
     - Install DBeaver (dbeaver.io).
+    
     - Create a new database connection:
+    
           - Database > New Connection > Select Apache Hive.
+          
           **Configure**:
+          
               - JDBC URL: jdbc:hive2://hive-server:10000/default
+              
               - Username: Leave blank or use hive (default).
+              
               - Password: Leave blank (unless configured).
+              
               - Driver: Download the Hive JDBC driver if prompted.
+              
               - Test the connection to ensure hive-server is accessible.
+              
           - Test the connection to ensure hive-server is accessible.
           
 2- **Execute SQL Script:**
@@ -40,15 +50,23 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
 - Execute the script to create mimic_db and its tables:
 
  Example snippet from create_mimic_db.sql
+ 
 CREATE DATABASE IF NOT EXISTS mimic_db
+
 LOCATION 'hdfs://namenode:9000/transformed_mimic';
+
 USE mimic_db;
+
 CREATE EXTERNAL TABLE IF NOT EXISTS admissions (
+
     row_id INT,
+    
     subject_id INT,
+    
     ...
 )
 STORED AS PARQUET
+
 LOCATION 'hdfs://namenode:9000/transformed_mimic/ADMISSIONS.parquet';
 
 **Verify table creation:**
