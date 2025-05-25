@@ -49,7 +49,7 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
 - Open sql/create_mimic_db.sql from the repository in DBeaver’s SQL editor.
 - Execute the script to create mimic_db and its tables:
 
- Example snippet from create_mimic_db.sql
+Example snippet from create_mimic_db.sql
  
 CREATE DATABASE IF NOT EXISTS mimic_db
 
