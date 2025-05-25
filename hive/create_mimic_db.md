@@ -58,12 +58,8 @@ Example snippet from create_mimic_db.sql
  USE mimic_db;
 
  CREATE EXTERNAL TABLE IF NOT EXISTS admissions (
-
-    row_id INT,
-    
-    subject_id INT,
-    
-     ...
+   row_id INT, subject_id INT,
+    ...
  )
  STORED AS PARQUET
 
