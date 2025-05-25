@@ -50,6 +50,7 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
 - Execute the script to create mimic_db and its tables:
 
 Example snippet from create_mimic_db.sql
+
  
  CREATE DATABASE IF NOT EXISTS mimic_db
 
