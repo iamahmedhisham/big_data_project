@@ -14,6 +14,8 @@ This repository implements a **big data pipeline** for processing the [MIMIC-III
   2. Create Hive database and tables linked to Parquet files.
   3. Query data via Hive or Spark SQL.
 
+## Data Flow Diagram
+
 ![Data Flow](./data_flow_diagram.png)
 
 ## Repository Structure
