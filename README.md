@@ -20,7 +20,7 @@ This repository implements a **big data pipeline** for processing the [MIMIC-III
 
 ## Repository Structure
 ```plaintext
-MIMIC-III-ETL-Pipeline/
+big_data_project/
 ├── docker-hadoop-spark/
 │   └── Makefile
 │   └── docker-compose.yml
