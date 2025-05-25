@@ -65,6 +65,7 @@ Example snippet from create_mimic_db.sql
  STORED AS PARQUET
 
  LOCATION 'hdfs://namenode:9000/transformed_mimic/ADMISSIONS.parquet';
+```
 
 **Verify table creation:**
 
