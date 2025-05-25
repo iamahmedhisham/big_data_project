@@ -1,0 +1,39 @@
+big_data_project/
+├── docker-hadoop-spark/
+│   └── Makefile
+│   └── docker-compose.yml
+│   └── entrypoint.sh
+│   └── hadoop-hive.env
+│   └── hadoop.env
+│   └── spark_in_action.MD
+│   └── startup.sh
+├── hive/
+│   └── hive_queries/
+│      └── Admission_Type.sql
+│      └── Lab_Results_by_Gender.sql
+│      └── avg_stay_by_diagnosis.sql
+│      └── hospital_deaths.sql
+│      └── icu_readmission_distribution.sql
+│      └── mortality_rate_by_age.sql
+│   └── core-site.xml
+│   └── hive-site.xml
+│   └── create_mimic_db.sql
+│   └── creating_external_tables.md
+├── mimic_db/
+│   └── dataset.md
+├── Documentations/
+│   └── architecture.md
+│   └── data_flow_diagram.png
+│   └── setup_guide.md
+│   └── troubleshooting.md
+│   └── usage_examples.md
+├── scripts/
+│   ├── copy_to_hdfs.bat
+│   └── clean_mimic_tables.py
+│   └── read_parquet.py
+│   └── run_py_into_spark.bat
+│   └── extract_schema.py
+├── full_tables.png
+├── USER_MANUAL.md
+├── README.md
+└── LICENSE
