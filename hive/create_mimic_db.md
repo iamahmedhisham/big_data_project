@@ -42,7 +42,7 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
               
               - Test the connection to ensure hive-server is accessible.
               
-          - Test the connection to ensure hive-server is accessible.
+              - Test the connection to ensure hive-server is accessible.
           
 2- **Execute SQL Script:**
 
