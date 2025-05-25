@@ -33,6 +33,6 @@ MIMIC-III-ETL-Pipeline/
 │   └── read_parquet.py
 │   └── run_py_into_spark.bat
 │   └── extract_schema.py
-├── full image for tables.png
+├── full_tables.png
 ├── README.md
 └── LICENSE
