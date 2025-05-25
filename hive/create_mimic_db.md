@@ -30,7 +30,7 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
     
           - Database > New Connection > Select Apache Hive.
           
-          **Configure**:
+   **Configure**:
           
               - JDBC URL: jdbc:hive2://hive-server:10000/default
               
@@ -68,9 +68,9 @@ Example snippet from create_mimic_db.sql
 ```
 
 **Verify table creation:**
-
+```text
 SHOW TABLES IN mimic_db;
-
+```
 ## Setting Up Hive in Docker
 
 To support Beeline JDBC connections, configure a hive-server container in your Docker environment, alongside Spark and HDFS.
@@ -84,6 +84,6 @@ To support Beeline JDBC connections, configure a hive-server container in your D
 ## Testing the Setup
 
 - In DBeaver, query a table to verify:
-  
+  ```text
   SELECT * FROM mimic_db.admissions LIMIT 5;
-
+```
