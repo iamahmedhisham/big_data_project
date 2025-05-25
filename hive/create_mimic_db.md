@@ -6,13 +6,15 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
 
 ## Key Features
  **Database**: mimic_db is stored in HDFS at hdfs://namenode:9000/transformed_mimic.
+ 
  **External Tables**: Tables (admissions, callout, icustays, labevents, patients) are external, ensuring Parquet files persist if tables are dropped.
+ 
   **Schema Mapping**:
    - Spark integer → Hive INT
    - Spark string → Hive STRING
    - Spark timestamp → Hive TIMESTAMP
    - Spark double → Hive DOUBLE
-   - 
+
 **Storage**: Tables use Parquet format with Snappy compression (TBLPROPERTIES ('parquet.compression'='SNAPPY')). Adjust to GZIP if needed.
 
 **Nullable Columns**: All columns are nullable, matching the Parquet schemas.
@@ -31,7 +33,9 @@ The mimic_db database uses external Hive tables, each linked to a Parquet file i
               - Driver: Download the Hive JDBC driver if prompted.
               - Test the connection to ensure hive-server is accessible.
           - Test the connection to ensure hive-server is accessible.
+          
 2- **Execute SQL Script:**
+
 - Open sql/create_mimic_db.sql from the repository in DBeaver’s SQL editor.
 - Execute the script to create mimic_db and its tables:
 
@@ -46,18 +50,24 @@ CREATE EXTERNAL TABLE IF NOT EXISTS admissions (
 )
 STORED AS PARQUET
 LOCATION 'hdfs://namenode:9000/transformed_mimic/ADMISSIONS.parquet';
+
 **Verify table creation:**
+
 SHOW TABLES IN mimic_db;
 
 ## Setting Up Hive in Docker
+
 To support Beeline JDBC connections, configure a hive-server container in your Docker environment, alongside Spark and HDFS.
 
 **Prerequisites**
+
   - Docker and Docker Compose installed.
   - Project directory: C:\Users\ICT012\Desktop\big_data_project.
   - HDFS running at namenode:9000.
 
 ## Testing the Setup
+
 - In DBeaver, query a table to verify:
+  
   SELECT * FROM mimic_db.admissions LIMIT 5;
 
