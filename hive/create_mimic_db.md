@@ -86,4 +86,3 @@ To support Beeline JDBC connections, configure a hive-server container in your D
 - In DBeaver, query a table to verify:
   ```text
   SELECT * FROM mimic_db.admissions LIMIT 5;
-```
